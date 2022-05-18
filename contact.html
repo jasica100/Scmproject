@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+       
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+     <script src="script.js"></script>
+</head>
+
+<header>
+
+    <a href="index.html" class="brand">Travel &nbsp Ivony</a>
+    <div class="menu-btn"></div>
+    <div class="navigation">
+      <div class="navigation-items">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="signin.html">Sign in</a>
+      </div>
+    </div>
+  </header>
+  
+<body style="background-image: url(https://images.unsplash.com/photo-1613426995195-b5acccd8670c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)">
+    <div class="container">
+    <heading>
+        <h1 style="font-size: 3rem;">Contact Us</h1>
+        <p> We're here to help and answer any questions you might have. We will answer ypur inquiries in a
+            maximum of 48 hours.</p>
+    </heading>
+    <div class="content">
+        <div class="content-form">
+            <section>
+                <i class="fa fa-map-marker fa-2x" aria-hidden="true" style="background-color: rgb(66, 195, 247);"></i>
+                <h2>address</h2>
+                <p>
+                    Patiala<br>
+                    Chandigarh NH 7,64 <br>
+                    Punjab,140401.
+                </p>
+            </section>
+
+            <section>
+                <i class="fa fa-phone fa-2x" aria-hidden="true" style="background-color: rgb(25, 252, 25);"></i>
+                <h2>Phone</h2>
+                <p>123-456-78901548</p>
+            </section>
+
+            <section>
+                <i class="fa fa-envelope fa-2x" aria-hidden="true" style="background-color: red;"></i>
+                <h2>E-mail</h2>
+                <p>travelivony@gmail.com</p>
+            </section>
+        </div>
+    </div>
+
+    <form id="form" name="myForm" action=" " onsubmit="return validateForm()" method="post" >
+        <div class="form">
+            <div class="right">
+                <div class="contact-form">
+                    <input type="text" id="name" required>
+                    <span>Full Name</span>
+                </div>
+
+                <div class="contact-form">
+                    <input type="email" id="email" required>
+                    <span>E-mail Id</span>
+                </div>
+                <div class="contact-form" id="text" >
+                    <input type="text" id="text">
+                  </input>
+                    <span>Type your Message....</span>
+                </div>
+
+                <div class="contact-form">
+                    <input type="submit" name="SUBMIT"  id="submit" style="background-color: rgb(250, 99, 44); border: none; outline: none; transition: 0.3s ease-in-out; height: 50px; border-radius: 5px; width: 210px; " >
+                    <!-- <input type="submit" value="SUBMIT" class="submit-btn" id="submit-btn" onclick="popup()" style="background-color: rgb(250, 99, 44); border: none; outline: none; height: 50px; border-radius: 5px; width: 210px; "> -->
+                </div>
+            </div>
+        </div>
+        </div>
+    </form>
+    <div class="media">
+        <li><i class="fa fa-facebook-square fa-2x" aria-hidden="true" style="color: #3b5998 ;"></i></li>
+        <li><i class="fa fa-instagram fa-2x" aria-hidden="true" style="color: rgb(255, 45, 255)"></i></li>
+        <li><i class="fa fa-whatsapp fa-2x" aria-hidden="true" style="color: rgb(25, 252, 25);"></i></li>
+        <li><i class="fa fa-twitter-square fa-2x" aria-hidden="true" style="color: rgb(66, 195, 247);"></i></li>
+    </div>
+    <div class="empty">
+
+    </div>
+    </div>
+
+    <script type="text/javascript">
+        //Javacript for responsive navigation menu
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+    
+        menuBtn.addEventListener("click", () => {
+          menuBtn.classList.toggle("active");
+          navigation.classList.toggle("active");
+        });
+
+    
+      </script>
+    
+</body>
+
+</html>
